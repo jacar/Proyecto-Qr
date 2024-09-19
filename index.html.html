@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<html>
+    
+<head><base href="https://webcincodev.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armando Ovalle - Enlaces</title>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+        background-color: #001228;
+        display: flex;
+        flex-direction: column;
+    }
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .container {
+        flex: 1 0 auto;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .profile {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 18, 40, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #8ebf22;
+        margin-bottom: 15px;
+    }
+    h1 {
+        color: #8ebf22;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 0.9em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .links {
+        display: grid;
+        gap: 15px;
+    }
+    .link {
+        background-color: #8ebf22;
+        color: #001228;
+        padding: 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link:hover {
+        background-color: #a8e028;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(142, 191, 34, 0.3);
+    }
+    .link i {
+        margin-right: 10px;
+    }
+    footer {
+        background-color: rgba(0, 18, 40, 0.9);
+        color: #8ebf22;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8em;
+        position: relative;
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="profile">
+            <img src="https://www.webcincodev.com/blog/wp-content/uploads/2024/09/Designer-3.jpeg" alt="Foto de perfil de Armando Ovalle" class="profile-img" width="150" height="150">
+            <h1>Armando Ovalle</h1>
+            <p>Diseñador gráfico y web creativo publicitario, art director, Frontend, Bloguero tecnológico. Soy un apasionado de utilizar la tecnología para crear experiencias digitales que dejan una impresión.</p>
+            <div class="links">
+                <a href="qr/" class="link"><i class="fas fa-qrcode"></i> Generador QR</a>
+                <a href="edicode/" class="link"><i class="fas fa-code"></i> Editor de Código en vivo</a>
+                <a href="prompt/" class="link"><i class="fas fa-robot"></i> Generador de Prompts</a>
+                <a href="play/" class="link"><i class="fas fa-gamepad"></i> Juego Lata</a>
+                <a href="blog" class="link"><i class="fas fa-blog"></i> Blog</a>
+                <a href="/" class="link"><i class="fas fa-briefcase"></i> Portafolio</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright © 2024 WebCincoDev. Creado con IA
+    </footer>
+
+    <script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 200, density: { enable: true, value_area: 800 } },
+            color: { value: "#8ebf22" },
+            shape: {
+                type: "circle",
+                stroke: { width: 0, color: "#000000" },
+                polygon: { nb_sides: 5 },
+            },
+            opacity: {
+                value: 0.5,
+                random: true,
+                anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+            },
+            size: {
+                value: 3,
+                random: true,
+                anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#8ebf22",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 3,
+                direction: "none",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: { enable: false, rotateX: 600, rotateY: 1200 }
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" },
+                resize: true
+            },
+            modes: {
+                grab: { distance: 400, line_linked: { opacity: 1 } },
+                bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                repulse: { distance: 200, duration: 0.4 },
+                push: { particles_nb: 4 },
+                remove: { particles_nb: 2 }
+            }
+        },
+        retina_detect: true
+    });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.boxShadow = '0 6px 12px rgba(142, 191, 34, 0.5)';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.boxShadow = '0 4px 10px rgba(142, 191, 34, 0.3)';
+            });
+        });
+    });
+    </script>
+</body>
+</html>
